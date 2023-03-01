@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="./style/global.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="flex w-full justify-center bg-gray-100 p-2">
+      <ul class="decoration-none flex gap-6 text-lg font-semibold">
+        <li class="navItem-native"><a href="./">Home</a></li>
+        <li class="navItem">
+            <a href="./createPlaylist.html">
+                Create Playlist
+            </a>
+        </li>
+        <li class="navItem">
+            <a href="./insidePlaylist.html">Inside Playlist</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="p-4 bg-white">
+        <h2 class="text-4xl font-thin my-4">Your Playlist</h2>
+        <!-- Playlist Section -->
+        <section class="grid gap-4 md:graid-cols-2 lg:grid-cols-3">
+            <div class="card border border-solid border-gray-100">
+                <img class="h-full w-1/3 object-cover" src="./assets/album.jpg" alt="playlist-cover">
+                <div class="py-2 px-4 flex flex-col justify-around h-full ">
+                    <div class="info">
+                    <h3 class="text-2xl font-semibold">Playlist Name</h3>
+                    <p class="text-gray-700 text-sm">small description about playlist</p>
+                    </div>
+                    <h3 class="text-lg font-semibold">5 songs</h3>
+                </div>
+            </div>
+            <div class="card border border-solid border-gray-100">
+                <img class="h-32 w-1/3 object-cover" src="./assets/album.jpg" alt="playlist-cover">
+                <div class="py-2 px-4 flex flex-col justify-between h-full ">
+                    <div class="info">
+                        <h3 class="text-2xl font-semibold">Playlist Name 2</h3>
+                        <p class="text-gray-700 text-sm">random description about playlist</p>
+                    </div>
+                        <h3 class="text-lg font-semibold">18 songs</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+  </body>
+</html>

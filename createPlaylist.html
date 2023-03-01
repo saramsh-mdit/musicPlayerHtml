@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Playlist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="./style/global.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="flex w-full justify-center bg-gray-100 p-2">
+      <ul class="decoration-none flex gap-6 text-lg font-semibold">
+        <li class="navItem"><a href="./">Home</a></li>
+        <li class="navItem-native">
+          <a href="./createPlaylist.html"> Create Playlist </a>
+        </li>
+        <li class="navItem">
+          <a href="./insidePlaylist.html">Inside Playlist</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="p-4 bg-white">
+      <form id="playlistForm" class="my-4 grid gap-4 max-w-lg mx-auto p-4 border">
+        <h2 class="text-4xl text-center font-semibold text-orange-500 mb-4">
+          Create Playlist
+        </h2>
+        <div class="grid gap-2">
+          <label
+            for="name"
+            class="font-semibold text-gray-800"
+            >Playlist Name:</label
+          >
+          <input
+          required
+            id="pl-name"
+            placeholder="Good Times"
+            class="border-gray-200 border px-4 py-2"
+            name="name"
+            type="text"
+          />
+        </div>
+        <div class="grid gap-2">
+          <label
+            for="description"
+            class="font-semibold text-gray-800"
+            >Description:</label
+          >
+          <textarea
+          required
+            id="pl-description"
+            placeholder="Songs that i like to listen before bed."
+            class="border-gray-200 border px-4 py-2"
+            name="description"
+          ></textarea>
+        </div>
+        <button
+          class="px-4 py-2 bg-orange-600 text-white text-lg font-semibold hover:bg-orange-400"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+
+      <form id="musicForm" class="my-4 grid gap-4 max-w-lg mx-auto p-4 border">
+        <h2 class="text-4xl text-center font-semibold text-orange-500 mb-4">
+          Add Music
+        </h2>
+        <div class="grid gap-2">
+          <label
+            for="name"
+            class="font-semibold text-gray-800"
+            >Name:</label
+          >
+          <input
+          required
+            id="m-name"
+            placeholder="Animal"
+            class="border-gray-200 border px-4 py-2"
+            name="name"
+            type="text"
+          />
+        </div>
+         <div class="grid gap-2">
+          <label
+            for="artist"
+            class="font-semibold text-gray-800"
+            >Artist Name:</label
+          >
+          <input
+          required
+            id="m-artist"
+            placeholder="Maroon 5"
+            class="border-gray-200 border px-4 py-2"
+            name="artist"
+            type="text"
+          />
+        </div>
+         <div class="grid gap-2">
+          <label
+            for="link"
+            class="font-semibold text-gray-800"
+            >Link:</label
+          >
+          <input
+          required
+            id="m-link"
+            placeholder="https://youtube.com/maroon5"
+            class="border-gray-200 border px-4 py-2"
+            name="link"
+            type="text"
+          />
+        </div>
+        <button
+          class="px-4 py-2 bg-orange-600 text-white text-lg font-semibold hover:bg-orange-400"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
+    <script src="./js/playlistForm.js"></script>
+  </body>
+</html>

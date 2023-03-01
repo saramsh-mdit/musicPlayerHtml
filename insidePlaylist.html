@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="./style/global.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <!-- navbar -->
+    <nav class="flex w-full justify-center bg-gray-100 p-2">
+      <ul class="decoration-none flex gap-6 text-lg font-semibold">
+        <li class="navItem"><a href="./">Home</a></li>
+        <li class="navItem">
+          <a href="./createPlaylist.html"> Create Playlist </a>
+        </li>
+        <li class="navItem-native">
+          <a href="./insidePlaylist.html">Inside Playlist</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="p-4 bg-white">
+      <h2 class="text-5xl font-bold tracking-wide my-8 text-orange-500 my-4">
+        Playlist Name
+      </h2>
+      <p class="text-3xl font-thin tracking-wide my-8 text-gray-800 my-4">
+        Music List
+      </p>
+      <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <!-- Music Card -->
+        <a class="music hover:shadow cursor-pointer hover:text-orange-600 overflow-hidden hover:duration-300 border-gray-100 border rounded">
+          <img
+            class="h-30 w-full object-cover hover:scale-105 hover:duration-300"
+            src="./assets/music.webp"
+            alt="playlist-cover"
+          />
+          <div class="grid p-4">
+            <h3 class="text-2xl font-semibold">Animal</h3>
+            <p class="text-gray-700 text-sm">Artist: Maroon 5</p>
+          </div>
+        </a>
+
+        <a class="music hover:shadow cursor-pointer hover:text-orange-600 overflow-hidden hover:duration-300 border-gray-100 border rounded">
+          <img
+            class="h-30 w-full object-cover hover:scale-105 hover:duration-300"
+            src="./assets/music.webp"
+            alt="playlist-cover"
+          />
+          <div class="grid p-4">
+            <h3 class="text-2xl font-semibold">Sugar</h3>
+            <p class="text-gray-700 text-sm">Artist: Maroon 5</p>
+          </div>
+        </a>
+
+      </div>
+    </main>
+  </body>
+</html>

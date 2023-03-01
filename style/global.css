@@ -1,0 +1,23 @@
+.navItem {
+    cursor: pointer;
+    color: rgb(57, 57, 57);
+}
+.navItem:hover,.navItem:active, .navItem-native  {
+    color:#FB923C;
+    cursor: pointer;
+}
+
+.card {
+    background: #eeeeee;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem;
+}
+
+.card:hover {
+    background: white;
+    border: 1px solid #FB923C;
+    color: #FB923C;
+}
